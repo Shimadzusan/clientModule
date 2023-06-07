@@ -1,0 +1,179 @@
+<html>
+
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    
+    <style>
+::-webkit-scrollbar-button { 
+background-image:url(''); 
+background-repeat:no-repeat; 
+width:6px; 
+height:0px 
+} 
+ 
+::-webkit-scrollbar-track { 
+background-color:#96aab6; 
+box-shadow:0px 0px 3px #000 inset; 
+} 
+ 
+::-webkit-scrollbar-thumb { 
+-webkit-border-radius: 5px; 
+border-radius: 5px; 
+background-color:#1C6956; 
+box-shadow:0px 1px 1px #fff inset; 
+background-image:url('assets/59610063.png'); 
+background-position:center; 
+background-repeat:no-repeat; 
+} 
+ 
+::-webkit-resizer{ 
+background-image:url(''); 
+background-repeat:no-repeat; 
+width:7px; 
+height:0px 
+} 
+ 
+::-webkit-scrollbar{ 
+width: 11px; 
+}
+</style>
+    
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body bgcolor = #d4dee4>
+       <style>
+                table, th, td {
+  border: 0px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+table#t01 {
+  width: 100%;    
+  background-color: #f1f1c1;
+}
+</style>
+       
+        <div id="object_button">
+            <a href  = 'index.html' style="color: white">Home</a>
+        </div>
+            
+        <div id="object_button">
+            <a href  = 'workspace.html' style="color: white">Workspace</a>
+        </div>
+            
+        <div id="object_button">
+            <a href  = 'registration.html' style="color: white">Registration</a>
+        </div>
+            
+        <div style = "font-family: colonna mt"; align = "center"><h1>--- Web Data Collector ---</h1>
+        </div>
+<! modul_one: monitor>
+            
+        <div id="monitor" style="color: black; width: 100%; height: 90%; background: #B4C2CA; font-family: Roman; border: solid 1px black;  float: left">
+            <p></p>
+            <p>&nbsp Introduction.
+            <p>&nbsp Start with an introduction to open data and its importance in research, innovation, and decision-making.
+            <p>&nbsp Identifying reliable sources: Explain the importance of identifying reliable sources of open data and provide    examples of credible sources like government websites, research institutions, and non-profit organizations.
+            <p>&nbsp Using APIs: Discuss how APIs can be used to access open data in a structured way and provide examples of websites that offer APIs.
+            <p>&nbsp Web scraping: Explain what web scraping is and how it can be used to collect data from websites that do not provide APIs. However, stress the importance of obtaining the website owner's permission before scraping their data.
+            <p>&nbsp Data cleaning: Explain the importance of data cleaning and provide examples of techniques used to ensure that the data is accurate and usable.
+            <p>&nbsp Data formats: Discuss the different formats in which open data may be available and provide guidance on choosing the appropriate format for your needs.
+            <p>&nbsp Data storage: Explain the importance of storing the data in a database or cloud-based storage system for easy retrieval and analysis.
+            <p>&nbsp Data privacy: Discuss the importance of data privacy and provide guidance on anonymizing or personal information before using the data.
+            <p>&nbsp Data licensing: Discuss the importance of complying with licensing agreements and provide guidance on checking if the open data is subject to any licensing agreements.
+            <p>&nbsp Data visualization: Explain the importance of data visualization and provide examples of techniques used to present the data in a clear and meaningful way. Stress the importance of using data visualization to identify patterns and trends in the data.
+            <p>&nbsp Conclusion: Summarize the main points of the article and emphasize the importance of collecting open data from the internet in a responsible and ethical way.
+        </div>
+                 
+<! modul_three>
+        <div style="color: black; width: 100%; height: 1%; background: #d4dee4; font-family: Roman; border: solid 0px black;  float: left">     
+        </div>
+        <! here was low module>
+        
+        <div id="element">
+        </div>
+        
+        <script id="modul" type="text/html">
+   <table style="width: 60%"><tr>
+		 <td>
+
+        &nbsp&nbsp<select id="item"> <option disabled>option for only one item</option>
+		<option>ником сервис</option>
+        <option>пульты</option>
+        <option>багет</option> 
+	    <option>фнд</option>
+        <option>копия</option>
+        <option>печать</option>
+		</select> 
+
+	    <p>&nbsp&nbsp<select id="configuration"> <option>days</option>
+		<option>deals</option> <option>option for only one item</option></select>
+		
+
+		
+<table><tr>
+		 <td>
+	 <br>cash_gain
+	 <br>online_income
+	 <br>expense
+	<br>total_gain
+    </td>
+    <td>&nbsp
+    <br><input id="cash_gain" name="name" type="checkbox" value="true" >
+    <br><input id="online_income" name="name" type="checkbox" value="true" >
+    <br><input id="expense" name="name" type="checkbox" value="true" >
+<br><input id="total_gain" name="name" type="checkbox" value="true" >
+    </td>
+</table>
+
+		
+		<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<input  onclick="press_engage()" id="engage" type="submit" value="Engage">
+</td>
+<td style="vertical-align: top">
+<div style="overflow: auto; height: 250px" id="one_item_monitor">
+</div>
+</td>
+</tr>
+</table>
+</script>
+ <script id="modulOnlineIncome" type="text/html">
+<table style="width: 75%"><tr>
+		 <td>
+
+	    <p>&nbsp&nbsp<select id="configuration"> <option>days</option>
+		<option>deals</option> <option>option for only one item</option></select>
+			
+<table><tr>
+		 <td>
+	<br>sberbank
+	<br>tinkoff
+	<br>pochta-bank
+	<br>total
+    </td>
+    <td>&nbsp
+    <br><input id="sber" name="name" type="checkbox" value="true" >
+    <br><input id="tinkoff" name="name" type="checkbox" value="true" >
+    <br><input id="pochta_bank" name="name" type="checkbox" value="true" >
+	<br><input id="total" name="name" type="checkbox" value="true" >
+    	</td>
+</table>
+
+		<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<input  onclick="press_online_income()" id="online_income_button" type="submit" value="Engage">
+</td>
+<td style="vertical-align: top">
+<div style="overflow: auto; height: 250px" id="online_income_monitor">
+</div>
+</td>
+</tr>
+</table>
+</script>
+        
+    </body>     
+</html>
