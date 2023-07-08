@@ -40,8 +40,8 @@ public class WorkspaceServlet extends HttpServlet {
 		response.setContentType("text/plain");
 		String data = request.getParameter("webData");
 		System.out.println(data);
-		
-		String s = dataOperation.readDataFromFile("C:\\Users\\user\\eclipse-workspace\\clientModule\\resultGlassdoor.csv");
+		//C:\\Users\\user\\eclipse-workspace\\clientModule\\
+		String s = dataOperation.readDataFromFile("resources\\resultGlassdoor.csv");
 		System.out.println(s);
 		
 //		response.getWriter().write(data + " my note from web ...");	

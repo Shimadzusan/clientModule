@@ -54,9 +54,10 @@ public class Authorization extends HttpServlet {
 //		JSONArray obj = new JSONArray(data.substring(8).toString());
 		System.out.println(obj.getString("login") + " * " + obj.getString("pass"));
 //		System.out.println(obj.getString(0) + " * " + obj.getString(0));
-		
-		String s = dataOperation.readDataFromFile("C:\\Users\\user\\eclipse-workspace\\clientModule\\accounts.csv");
-		dataOperation.writeDataToFile("C:\\Users\\user\\eclipse-workspace\\clientModule\\accounts.csv", s + (obj.getString("login") + ";" + obj.getString("pass")));
+		//C:\\Users\\user\\eclipse-workspace\\clientModule\\
+		String s = dataOperation.readDataFromFile("resources\\accounts.csv");
+		//C:\\Users\\user\\eclipse-workspace\\clientModule\\
+		dataOperation.writeDataToFile("accounts.csv", s + (obj.getString("login") + ";" + obj.getString("pass")));
 		
 //		dataOperation.writeDataToFile("C:\\Users\\user\\eclipse-workspace\\clientModule\\accounts.csv", (obj.getString(0) + ";" + obj.getString(1)));
 		System.out.println("AuthorizationServlet, data to accounts file added");

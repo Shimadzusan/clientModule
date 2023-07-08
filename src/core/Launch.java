@@ -16,11 +16,13 @@ public class Launch {
 		String s = dataOperation.readDataFromFile("resultGlassdoor.csv");
 //		System.out.println(s);
 		
-		String x = "webData={\"login\":\"4566\",\"pass\":\"1111\"}";
+		String x = "webData={\"login\":\"774566\",\"pass\":\"1111\"}";
 		System.out.println(x.substring(8));
 		
 		JSONObject obj = new JSONObject(x.substring(8));
 		System.out.println(obj.getString("login") + " * " + obj.getString("pass"));
+		
+		System.out.println(new DataOperation().readDataFromFile("resources\\resultGlassdoor.csv"));
 
 	}
 
