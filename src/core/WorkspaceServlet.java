@@ -33,7 +33,7 @@ public class WorkspaceServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		this.counter++;
-		System.out.println("..simple counter: " + counter);
+		System.out.println("..simple count: " + counter);
 		System.out.println("I am servlet_one ...method POST");
 		
 		request.setCharacterEncoding("utf-8");
@@ -41,7 +41,8 @@ public class WorkspaceServlet extends HttpServlet {
 		String data = request.getParameter("webData");
 		System.out.println(data);
 		//C:\\Users\\user\\eclipse-workspace\\clientModule\\
-		String s = dataOperation.readDataFromFile("resources\\resultGlassdoor.csv");
+//		String s = dataOperation.readDataFromFile("resources\\resultGlassdoor.csv");
+		String s = dataOperation.readDataFromFile("resources\\resultGlassdoor.json");
 		System.out.println(s);
 		
 //		response.getWriter().write(data + " my note from web ...");	

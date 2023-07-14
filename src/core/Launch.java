@@ -22,7 +22,7 @@ public class Launch {
 		JSONObject obj = new JSONObject(x.substring(8));
 		System.out.println(obj.getString("login") + " * " + obj.getString("pass"));
 		
-		System.out.println(new DataOperation().readDataFromFile("resources\\resultGlassdoor.csv"));
+		System.out.println(new DataOperation().readDataFromFile("resources\\resultGlassdoor.json"));
 
 	}
 
